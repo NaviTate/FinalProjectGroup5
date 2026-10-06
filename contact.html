@@ -1,91 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beanfolk | Contact</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Beanfolk | Contact</title>
+ 
+  <!-- Bootstrap CSS -->
+<link
+
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+
+    rel="stylesheet"
+>
+ 
+  <style>
+
+    body {
+
+      background-color: #f5f0e8;
+
+      color: #3e2723;
+
+      font-family: Arial, sans-serif;
+
+    }
+ 
+    .navbar {
+
+      background-color: #3e2723;
+
+    }
+ 
+    .navbar-brand,
+
+    .nav-link {
+
+      color: #fff !important;
+
+    }
+ 
+    .nav-link:hover {
+
+      color: #d7b899 !important;
+
+    }
+ 
+    .contact-section {
+
+      padding: 60px 0;
+
+    }
+ 
+    .contact-title {
+
+      font-weight: bold;
+
+      margin-bottom: 15px;
+
+    }
+ 
+    .contact-text {
+
+      color: #6d4c41;
+
+      line-height: 1.7;
+
+    }
+ 
+    .contact-form {
+
+      background-color: #fff;
+
+      padding: 30px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 15px rgba(62, 39, 35, 0.1);
+
+    }
+ 
+    .form-control,
+
+    .form-select {
+
+      border: 1px solid #d7ccc8;
+
+      border-radius: 8px;
+
+    }
+ 
+    .form-control:focus,
+
+    .form-select:focus {
+
+      border-color: #795548;
+
+      box-shadow: 0 0 0 0.2rem rgba(121, 85, 72, 0.15);
+
+    }
+ 
+    .btn-coffee {
+
+      background-color: #6d4c41;
+
+      color: white;
+
+      border: none;
+
+      padding: 10px 25px;
+
+      border-radius: 8px;
+
+    }
+ 
+    .btn-coffee:hover {
+
+      background-color: #4e342e;
+
+      color: white;
+
+    }
+ 
+    .coffee-images img {
+
+      object-fit: cover;
+
+      border-radius: 10px;
+
+    }
+ 
+    .top-image {
+
+      height: 300px;
+
+    }
+ 
+    .square-image {
+
+      height: 220px;
+
+    }
+ 
+    .tall-image {
+
+      height: 460px;
+
+    }
+ 
+    footer {
+
+      background-color: #3e2723;
+
+      color: white;
+
+      padding: 20px 0;
+
+      margin-top: 40px;
+
+    }
+</style>
 </head>
-<body class="bg-light text-dark">
-    <nav class="navbar navbar-expand-lg bg-light border-bottom border-2 border-light-subtle py-3">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-dark" href="#">☕ Beanfolk</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center gap-3">
-                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="guide.html">Guide</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="contact.html">Contact</a></li>
-                    <li class="nav-item">
-                        <span class="bg-dark text-white rounded px-2 py-1 d-inline-block">Q</span>
-                    </li>
-                </ul>
+ 
+<body>
+ 
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+ 
+      <a class="navbar-brand fw-bold" href="index.html">
+
+        ☕ Beanfolk
+</a>
+ 
+      <button
+
+        class="navbar-toggler"
+
+        type="button"
+
+        data-bs-toggle="collapse"
+
+        data-bs-target="#navbarNav"
+
+        aria-controls="navbarNav"
+
+        aria-expanded="false"
+
+        aria-label="Toggle navigation"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+ 
+      <div class="collapse navbar-collapse" id="navbarNav">
+ 
+        <ul class="navbar-nav ms-auto">
+ 
+          <li class="nav-item">
+<a class="nav-link" href="index.html">
+
+              Home
+</a>
+</li>
+ 
+          <li class="nav-item">
+<a class="nav-link" href="about.html">
+
+              About Us
+</a>
+</li>
+ 
+          <li class="nav-item">
+<a class="nav-link" href="coffee-guide.html">
+
+              Coffee Guide
+</a>
+</li>
+ 
+          <li class="nav-item">
+<a class="nav-link active" href="contact.html">
+
+              Contact
+</a>
+</li>
+ 
+        </ul>
+ 
+      </div>
+</div>
+</nav>
+ 
+ 
+  <!-- Contact Section -->
+<section class="contact-section">
+ 
+    <div class="container">
+ 
+      <div class="row align-items-center g-5">
+ 
+        <!-- Contact Form -->
+<div class="col-lg-6">
+ 
+          <h1 class="contact-title">
+
+            Get in Touch
+</h1>
+ 
+          <p class="contact-text">
+
+            Have a question about coffee culture, brewing methods,
+
+            or Beanfolk? We'd love to hear from you. Send us a
+
+            message using the form below.
+</p>
+ 
+ 
+          <div class="contact-form">
+ 
+            <form>
+ 
+              <!-- Name -->
+<div class="mb-3">
+ 
+                <label for="name" class="form-label">
+
+                  Name
+</label>
+ 
+                <input
+
+                  type="text"
+
+                  class="form-control"
+
+                  id="name"
+
+                  placeholder="Enter your name"
+
+                  required
+>
+ 
+              </div>
+ 
+ 
+              <!-- Email -->
+<div class="mb-3">
+ 
+                <label for="email" class="form-label">
+
+                  Email
+</label>
+ 
+                <input
+
+                  type="email"
+
+                  class="form-control"
+
+                  id="email"
+
+                  placeholder="Enter your email"
+
+                  required
+>
+ 
+              </div>
+ 
+ 
+              <!-- Topic -->
+<div class="mb-3">
+ 
+                <label for="topic" class="form-label">
+
+                  What would you like to talk about?
+</label>
+ 
+                <select
+
+                  class="form-select"
+
+                  id="topic"
+
+                  required
+>
+ 
+                  <option value="">
+
+                    Choose a topic
+</option>
+ 
+                  <option value="coffee-culture">
+
+                    Coffee Culture
+</option>
+ 
+                  <option value="brewing">
+
+                    Brewing Methods
+</option>
+ 
+                  <option value="origins">
+
+                    Coffee Origins
+</option>
+ 
+                  <option value="website">
+
+                    Website Feedback
+</option>
+ 
+                  <option value="other">
+
+                    Other
+</option>
+ 
+                </select>
+ 
+              </div>
+ 
+ 
+              <!-- Message -->
+<div class="mb-3">
+ 
+                <label for="message" class="form-label">
+
+                  Message
+</label>
+ 
+                <textarea
+
+                  class="form-control"
+
+                  id="message"
+
+                  rows="5"
+
+                  placeholder="Write your message here..."
+
+                  required
+></textarea>
+ 
+              </div>
+ 
+ 
+              <!-- Newsletter -->
+<div class="form-check mb-4">
+ 
+                <input
+
+                  class="form-check-input"
+
+                  type="checkbox"
+
+                  id="newsletter"
+>
+ 
+                <label
+
+                  class="form-check-label"
+
+                  for="newsletter"
+>
+
+                  Sign me up for the Beanfolk newsletter
+</label>
+ 
+              </div>
+ 
+ 
+              <!-- Submit -->
+<button
+
+                type="submit"
+
+                class="btn btn-coffee"
+>
+
+                Send Message
+</button>
+ 
+            </form>
+ 
+          </div>
+ 
+        </div>
+ 
+ 
+        <!-- Coffee Images -->
+<aside class="col-lg-6 coffee-images">
+ 
+          <!-- Large Top Image -->
+<img
+
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80"
+
+            class="img-fluid w-100 mb-3 top-image"
+
+            alt="Coffee shop interior"
+>
+ 
+ 
+          <div class="row g-3">
+ 
+            <!-- Left Column -->
+<div class="col-6">
+ 
+              <!-- Image 1 -->
+<img
+
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+
+                class="img-fluid w-100 mb-3 square-image"
+
+                alt="Coffee and latte"
+>
+ 
+ 
+              <!-- Image 3 -->
+<img
+
+                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80"
+
+                class="img-fluid w-100 square-image"
+
+                alt="Latte surrounded by coffee beans"
+>
+ 
             </div>
-        </div>
-    </nav>
+ 
+ 
+            <!-- Right Column -->
+<div class="col-6 mt-4">
+ 
+              <!-- Image 2 -->
+<img
 
-    <main class="container my-5">
-        <div class="row g-5 align-items-start">
-            <section class="col-lg-6">
-                <h1 class="display-5 fw-normal mb-3">Get in Touch</h1>
-                <p class="mb-4">Have questions about a brew? Want to recommend a bean? Fill out the form below and our baristas will get back to you.</p>
+                src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80"
 
-                <h2 class="h4 mb-3">Contact us</h2>
+                class="img-fluid w-100 tall-image"
 
-                <form>
-                    <div class="mb-3">
-                        <input type="text" class="form-control rounded-0" placeholder="Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control rounded-0" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <select class="form-select rounded-0" required>
-                            <option value="" disabled selected>Category (e.g. Brewing, Beans, Other)</option>
-                            <option value="beans">Coffee Beans</option>
-                            <option value="brewing">Brewing Methods</option>
-                            <option value="equipment">Equipment</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <textarea class="form-control rounded-0" rows="6" placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-dark w-100 py-2 rounded-0">Send</button>
-                </form>
-            </section>
-
-            <aside class="col-lg-6">
-                <img src="https://placehold.co/600x300/ECE4D9/3E2723?text=Top+Image" class="img-fluid w-100 mb-3" alt="Coffee setup">
-
-                <div class="row g-3">
-                    <div class="col-6">
-                        <img src="https://placehold.co/300x300/ECE4D9/3E2723?text=Image+1" class="img-fluid w-100 mb-3" alt="Coffee art">
-                        <img src="https://placehold.co/300x300/ECE4D9/3E2723?text=Image+3" class="img-fluid w-100" alt="Coffee cup">
-                    </div>
-                    <div class="col-6 mt-4">
-                        <img src="https://placehold.co/300x400/ECE4D9/3E2723?text=Image+2" class="img-fluid w-100" alt="Barista">
-                    </div>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <footer class="border-top border-2 py-4 mt-5 bg-light">
-        <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
-            <div class="fs-4">☕</div>
-            <div class="d-flex flex-wrap gap-3 small">
-                <a href="#" class="text-dark text-decoration-none">Socials 1</a>
-                <a href="#" class="text-dark text-decoration-none">Socials 2</a>
-                <a href="#" class="text-dark text-decoration-none">Socials 3</a>
-                <a href="#" class="text-dark text-decoration-none">Socials 4</a>
+                alt="Coffee shop"
+>
+ 
             </div>
-            <button class="btn btn-dark rounded-0 px-4">Sign up</button>
-        </div>
-    </footer>
+ 
+          </div>
+ 
+        </aside>
+ 
+      </div>
+ 
+    </div>
+ 
+  </section>
+ 
+ 
+  <!-- Footer -->
+<footer>
+ 
+    <div class="container text-center">
+ 
+      <p class="mb-0">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        © 2026 Beanfolk. Coffee culture, one cup at a time.
+</p>
+ 
+    </div>
+ 
+  </footer>
+ 
+ 
+  <!-- Bootstrap JavaScript -->
+<script
+
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+></script>
+ 
 </body>
 </html>
+ 
