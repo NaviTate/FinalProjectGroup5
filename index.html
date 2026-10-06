@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beanfolk | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">☕ Beanfolk</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-icon">Q</div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="country-details">
+            <div class="hero-text">
+                <h1>Welcome</h1>
+                <p>Welcome to Beanfolk, your cozy corner of the internet dedicated to the art and science of coffee. Explore origins, learn brewing methods, and join our community of coffee lovers.</p>
+            </div>
+            <div class="hero-image" aria-label="Coffee slideshow">
+                <img class="active" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" alt="Fresh coffee brew">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80" alt="Coffee beans and drink">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=80" alt="Coffee on a table">
+                <div class="slide-dots" aria-label="Slide indicators">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations-grid">
+            <article class="location-card">
+                <img src="assets/Tokyo.jpg" alt="Tokyo, Japan">
+                <h3>Tokyo, Japan</h3>
+                <p>Tokyo combines meticulous brewing traditions with a thriving specialty-coffee scene. Kissaten cafes, pour-over coffee, and carefully prepared espresso reflect Japan's attention to craftsmanship and detail.</p>
+                <a href="#country-details" class="read-more" data-country="tokyo">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Seoul.jpg" alt="Seoul, South Korea">
+                <h3>Seoul, South Korea</h3>
+                <p>Seoul has developed a dynamic cafe culture where coffee, design, and social spaces intersect. Specialty cafes range from minimalist espresso bars to highly themed and visually creative destinations.</p>
+                <a href="#country-details" class="read-more" data-country="seoul">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Sydney.jpg" alt="Sydney, Australia">
+                <h3>Sydney, Australia</h3>
+                <p>Sydney is known for its strong cafe culture and appreciation of quality espresso. Australian cafes often emphasize expertly prepared coffee, relaxed dining, and a vibrant neighborhood atmosphere.</p>
+                <a href="#country-details" class="read-more" data-country="sydney">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Addis Ababa.jpg" alt="Addis Ababa, Ethiopia">
+                <h3>Addis Ababa, Ethiopia</h3>
+                <p>Ethiopia is often celebrated as the birthplace of coffee. In Addis Ababa, coffee is deeply social, with traditional ceremonies turning a simple cup into a meaningful cultural experience.</p>
+                <a href="#country-details" class="read-more" data-country="addis-ababa">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Amsterdam.jpg" alt="Amsterdam, Netherlands">
+                <h3>Amsterdam, Netherlands</h3>
+                <p>Amsterdam's coffee culture blends specialty cafes with a relaxed, creative atmosphere. Dutch cafes often emphasize quality beans, thoughtful brewing, and comfortable spaces for conversation or quiet work.</p>
+                <a href="#country-details" class="read-more" data-country="amsterdam">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Barcelona.jpeg" alt="Barcelona, Spain">
+                <h3>Barcelona, Spain</h3>
+                <p>Barcelona combines traditional Spanish cafe culture with a growing specialty-coffee scene. Espresso-based drinks, relaxed cafe visits, and modern roasters give the city a distinctly Mediterranean coffee rhythm.</p>
+                <a href="#country-details" class="read-more" data-country="barcelona">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Cape Town.jpg" alt="Cape Town, South Africa">
+                <h3>Cape Town, South Africa</h3>
+                <p>Cape Town has developed a vibrant specialty-coffee scene shaped by independent cafes and local roasters. Coffee culture here often emphasizes craftsmanship, creativity, and fresh approaches to brewing.</p>
+                <a href="#country-details" class="read-more" data-country="cape-town">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Copenhagen.jpg" alt="Copenhagen, Denmark">
+                <h3>Copenhagen, Denmark</h3>
+                <p>Copenhagen is known for its minimalist cafe culture and strong specialty-coffee movement. Lightly roasted beans, precise brewing, and carefully designed cafes reflect the city's appreciation for simplicity and quality.</p>
+                <a href="#country-details" class="read-more" data-country="copenhagen">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Hanoi.jpg" alt="Hanoi, Vietnam">
+                <h3>Hanoi, Vietnam</h3>
+                <p>Hanoi has a distinctive coffee culture built around strong Vietnamese coffee, condensed milk, and the famous egg coffee. Small cafes make coffee an everyday part of social life.</p>
+                <a href="#country-details" class="read-more" data-country="hanoi">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Istanbul.jpg" alt="Istanbul, Turkey">
+                <h3>Istanbul, Turkey</h3>
+                <p>Istanbul has a centuries-old coffee tradition centered around Turkish coffee, prepared finely ground and unfiltered. Coffee is closely associated with hospitality, conversation, and traditional social customs.</p>
+                <a href="#country-details" class="read-more" data-country="istanbul">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Lisbon.jpg" alt="Lisbon, Portugal">
+                <h3>Lisbon, Portugal</h3>
+                <p>Lisbon's coffee culture revolves around small neighborhood cafes and strong espresso-style drinks. A quick coffee is often part of everyday routines, enjoyed alongside pastries and conversation.</p>
+                <a href="#country-details" class="read-more" data-country="lisbon">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/London.jpg" alt="London, United Kingdom">
+                <h3>London, United Kingdom</h3>
+                <p>London's coffee scene has grown from traditional cafes into a major specialty-coffee hub. Independent roasters, modern espresso bars, and diverse international influences shape the city's coffee culture.</p>
+                <a href="#country-details" class="read-more" data-country="london">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Reykjavik.jpg" alt="Reykjavik, Iceland">
+                <h3>Reykjavik, Iceland</h3>
+                <p>Coffee plays an important role in Icelandic social life, especially during its long, dark winters. Reykjavik's cafes offer cozy spaces where carefully brewed coffee accompanies conversation and relaxation.</p>
+                <a href="#country-details" class="read-more" data-country="reykjavik">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Rome.jpg" alt="Rome, Italy">
+                <h3>Rome, Italy</h3>
+                <p>Rome represents classic Italian espresso culture, where coffee is often enjoyed quickly at the bar. Espresso, cappuccino, and traditional cafe rituals remain central to everyday life.</p>
+                <a href="#country-details" class="read-more" data-country="rome">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Sao Paulo.jpg" alt="Sao Paulo, Brazil">
+                <h3>Sao Paulo, Brazil</h3>
+                <p>As a major city in one of the world's leading coffee-producing countries, Sao Paulo has a rich cafe culture combining Brazilian coffee traditions with an expanding specialty-coffee movement.</p>
+                <a href="#country-details" class="read-more" data-country="sao-paulo">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Seattle.jpg" alt="Seattle, United States">
+                <h3>Seattle, United States</h3>
+                <p>Seattle is strongly associated with modern American coffee culture and the growth of specialty cafes. Independent coffee shops, espresso drinks, and innovative brewing methods are part of the city's identity.</p>
+                <a href="#country-details" class="read-more" data-country="seattle">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Singapore.jpg" alt="Singapore">
+                <h3>Singapore</h3>
+                <p>Singapore's coffee culture blends traditional kopitiam heritage with modern specialty cafes. Local favorites such as kopi exist alongside carefully brewed international styles, reflecting the city's diverse culinary influences.</p>
+                <a href="#country-details" class="read-more" data-country="singapore">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Veracruz.jpg" alt="Veracruz, Mexico">
+                <h3>Veracruz, Mexico</h3>
+                <p>Veracruz sits within Mexico's important coffee-growing regions, giving the area a strong connection to local beans and traditional cafe culture. Coffee is often enjoyed alongside regional food and conversation.</p>
+                <a href="#country-details" class="read-more" data-country="veracruz">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Vienna.jpg" alt="Vienna, Austria">
+                <h3>Vienna, Austria</h3>
+                <p>Vienna's historic coffeehouse culture treats cafes as places for conversation, reading, and lingering. Traditional coffeehouses offer a distinctive atmosphere where coffee becomes part of a broader social ritual.</p>
+                <a href="#country-details" class="read-more" data-country="vienna">Read more</a>
+            </article>
+
+            <article class="location-card">
+                <img src="assets/Wellington.jpg" alt="Wellington, New Zealand">
+                <h3>Wellington, New Zealand</h3>
+                <p>Wellington has a lively specialty-coffee culture supported by independent cafes and local roasters. Flat whites, carefully prepared espresso, and a relaxed cafe atmosphere are especially characteristic of the city.</p>
+                <a href="#country-details" class="read-more" data-country="wellington">Read more</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">☕</div>
+        <div class="footer-socials">
+            <span>Socials 1</span>
+            <span>Socials 2</span>
+            <span>Socials 3</span>
+            <span>Socials 4</span>
+        </div>
+        <button class="btn sign-up-btn">Sign up</button>
+    </footer>
+
+    <script>
+        const heroImages = document.querySelectorAll('.hero-image img');
+        const dots = document.querySelectorAll('.dot');
+        const countryLinks = document.querySelectorAll('.read-more');
+        const heroTitle = document.querySelector('.hero-text h1');
+        const heroDescription = document.querySelector('.hero-text p');
+        let currentImage = 0;
+        let slideInterval;
+
+        const countryDetails = {
+            'addis-ababa': {
+                title: 'Addis Ababa, Ethiopia 🇪🇹',
+                image: 'assets/Addis Ababa.jpg',
+                description: `Ethiopia has one of the world's deepest connections to coffee and is widely regarded as the plant's place of origin. Coffee is much more than a popular drink here. It is closely connected to hospitality, family gatherings, and community life.
+
+In Addis Ababa, traditional coffee ceremonies can involve roasting green beans, grinding them by hand, and brewing the coffee in a jebena, a traditional clay pot. The ceremony is often leisurely, with several rounds of coffee served to guests. At the same time, Addis Ababa has a growing modern café scene where Ethiopian beans are prepared using espresso machines, pour-over methods, and other contemporary techniques.`
+            },
+            amsterdam: {
+                title: 'Amsterdam, Netherlands 🇳🇱',
+                image: 'assets/Amsterdam.jpg',
+                description: `Amsterdam has a relaxed and diverse coffee culture shaped by both traditional cafés and the city's growing specialty-coffee movement. Coffee is commonly enjoyed throughout the day, whether during a quick stop in the city or while relaxing in a neighborhood café.
+
+Modern Amsterdam has become increasingly interested in bean quality, roasting, and alternative brewing methods. Independent cafés and specialty roasters often showcase beans from different coffee-growing regions, giving customers opportunities to explore different flavors and brewing styles.`
+            },
+            barcelona: {
+                title: 'Barcelona, Spain 🇪🇸',
+                image: 'assets/Barcelona.jpeg',
+                description: `Barcelona's coffee culture reflects the city's relaxed Mediterranean lifestyle. Coffee is commonly enjoyed throughout the day, often alongside breakfast, a pastry, or a casual conversation. Traditional cafés remain part of everyday life while specialty coffee continues to grow.
+
+Espresso-based drinks such as café solo and café con leche are familiar favorites. In recent years, independent specialty cafés have introduced lighter roasts, single-origin beans, and alternative brewing methods, creating an interesting meeting point between traditional Spanish café habits and contemporary coffee culture.`
+            },
+            'cape-town': {
+                title: 'Cape Town, South Africa 🇿🇦',
+                image: 'assets/Cape Town.jpg',
+                description: `Cape Town has developed into one of South Africa's most recognizable specialty-coffee destinations. Independent cafés and local roasters have helped create a culture that places considerable attention on bean quality, roasting, and brewing technique.
+
+The city's coffee scene is particularly diverse. Visitors can find traditional espresso drinks alongside pour-over coffee, cold brews, and carefully prepared single-origin beans. Cape Town's cafés also function as social spaces, often combining coffee with food, art, design, and local community culture.`
+            },
+            copenhagen: {
+                title: 'Copenhagen, Denmark 🇩🇰',
+                image: 'assets/Copenhagen.jpg',
+                description: `Copenhagen's coffee culture is closely connected to the Danish appreciation for simple, comfortable social spaces. Cafés are popular places to meet friends, work, read, or simply take a break from the city.
+
+The specialty-coffee movement has also become an important part of Copenhagen's identity. Many cafés emphasize lightly roasted beans, precise brewing, and careful attention to flavor. This focus on quality fits naturally with the city's broader design philosophy, where functionality and simplicity are often valued alongside aesthetics.`
+            },
+            hanoi: {
+                title: 'Hanoi, Vietnam 🇻🇳',
+                image: 'assets/Hanoi.jpg',
+                description: `Vietnam is one of the world's major coffee-producing countries, and coffee has become an important part of everyday Vietnamese culture. Hanoi is particularly famous for its distinctive cafés and traditional preparation methods.
+
+Vietnamese coffee is often brewed using a small metal filter called a phin. Strong coffee may be combined with condensed milk to create cà phê sữa đá, a popular iced drink. Hanoi is also known for egg coffee, or cà phê trứng, which combines coffee with a rich, creamy egg mixture. Small cafés provide informal spaces for people to meet, talk, and watch the city go by.`
+            },
+            istanbul: {
+                title: 'Istanbul, Türkiye 🇹🇷',
+                image: 'assets/Istanbul.jpg',
+                description: `Istanbul's coffee traditions stretch back centuries and are closely associated with Turkish coffee. The coffee is prepared using very finely ground beans and traditionally brewed in a small pot called a cezve or ibrik. The grounds remain in the cup rather than being filtered out.
+
+Coffee has historically been associated with hospitality and social interaction. Sharing coffee can be an important part of welcoming guests and spending time together. Today, Istanbul combines this traditional culture with modern cafés offering espresso, specialty beans, and contemporary brewing techniques.`
+            },
+            lisbon: {
+                title: 'Lisbon, Portugal 🇵🇹',
+                image: 'assets/Lisbon.jpg',
+                description: `Lisbon has a strong everyday café culture built around small neighborhood establishments known as cafés or pastelarias. Coffee is often part of a daily routine rather than an occasional luxury, with people stopping for a quick espresso while running errands, meeting friends, or enjoying a pastry.
+
+A bica, Lisbon's name for a small espresso, is one of the city's familiar coffee choices. Traditional Portuguese café culture exists alongside newer specialty cafés, creating a blend of old and new approaches to coffee.`
+            },
+            london: {
+                title: 'London, United Kingdom 🇬🇧',
+                image: 'assets/London.jpg',
+                description: `London has one of the world's most diverse coffee scenes. Traditional cafés and tea culture remain important, but the city has also developed a large specialty-coffee community made up of independent cafés, micro-roasters, and international coffee businesses.
+
+London's modern coffee shops often focus on bean origins, roasting profiles, and brewing techniques. Espresso, filter coffee, flat whites, and other specialty drinks can be found throughout the city. Its multicultural population has also helped introduce a wide range of coffee traditions and influences.`
+            },
+            reykjavik: {
+                title: 'Reykjavík, Iceland 🇮🇸',
+                image: 'assets/Reykjavik.jpg',
+                description: `Coffee holds a special place in Icelandic social life. The country's cold climate and long winter nights have helped make cafés popular places for people to gather, relax, and enjoy something warm.
+
+Reykjavík has a growing specialty-coffee scene alongside its traditional coffee habits. Local cafés often emphasize high-quality beans, carefully prepared drinks, and cozy interiors. Coffee is commonly enjoyed with baked goods and conversation, making the café an important social setting as well as a place to get a drink.`
+            },
+            rome: {
+                title: 'Rome, Italy 🇮🇹',
+                image: 'assets/Rome.jpg',
+                description: `Rome represents one of the world's most recognizable espresso traditions. Coffee is often enjoyed quickly, with customers standing at the counter of a bar for a shot of espresso before continuing with their day.
+
+Italian coffee culture places importance on simplicity and routine. Espresso, cappuccino, and caffè macchiato are familiar choices, while milk-heavy drinks are traditionally more associated with mornings. Rome's cafés demonstrate how coffee can become an ordinary but deeply established part of everyday life.`
+            },
+            'sao-paulo': {
+                title: 'São Paulo, Brazil 🇧🇷',
+                image: 'assets/Sao Paulo.jpg',
+                description: `Brazil is the world's largest coffee-producing country, and São Paulo sits at the heart of a country with a long and influential coffee history. The city combines this agricultural heritage with a rapidly developing specialty-coffee scene.
+
+Brazilian coffee is known for the diversity of its growing regions and flavor profiles. In São Paulo, visitors can find everything from traditional coffee served in everyday cafés to carefully sourced single-origin beans prepared through modern brewing methods. The city provides a connection between Brazil's historic coffee industry and its contemporary café culture.`
+            },
+            seattle: {
+                title: 'Seattle, United States 🇺🇸',
+                image: 'assets/Seattle.jpg',
+                description: `Seattle is strongly associated with the development of modern American coffee culture. The city's café scene grew alongside independent coffee shops and eventually helped popularize specialty coffee throughout the United States.
+
+Today, Seattle has a wide variety of cafés, from neighborhood shops to specialty roasters focused on sourcing, roasting, and brewing. Espresso-based drinks remain popular, while pour-over coffee and other brewing methods have become increasingly common. Coffee shops also serve as social and working spaces within the city's urban culture.`
+            },
+            seoul: {
+                title: 'Seoul, South Korea 🇰🇷',
+                image: 'assets/Seoul.jpg',
+                description: `Seoul has developed an energetic café culture where coffee, design, and social experiences often come together. The city is known for its enormous variety of cafés, ranging from small specialty shops to highly themed establishments.
+
+Coffee is commonly enjoyed while meeting friends, studying, working, or taking photographs. Specialty cafés have also increased interest in carefully sourced beans and modern brewing techniques. At the same time, Seoul's café culture is strongly connected to visual presentation, with many establishments treating their interiors, drinks, and desserts as part of the overall experience.`
+            },
+            singapore: {
+                title: 'Singapore 🇸🇬',
+                image: 'assets/Singapore.jpg',
+                description: `Singapore's coffee culture combines traditional kopitiam heritage with a modern specialty-coffee movement. Kopitiams are traditional coffee shops where drinks such as kopi are served alongside local food.
+
+Traditional kopi is commonly prepared using robusta beans and may be served with condensed or evaporated milk and sugar, depending on the style ordered. Alongside this heritage, Singapore has developed a thriving specialty-coffee scene featuring independent cafés, international beans, espresso drinks, and alternative brewing methods. The result is a coffee culture that connects local tradition with global influences.`
+            },
+            sydney: {
+                title: 'Sydney, Australia 🇦🇺',
+                image: 'assets/Sydney.jpg',
+                description: `Sydney has a strong café culture where coffee is closely connected to everyday dining and social life. Australian cafés are particularly associated with carefully prepared espresso drinks and a relaxed approach to spending time over coffee.
+
+The flat white is one of the drinks strongly associated with Australian and New Zealand café culture. Sydney's modern coffee scene also places considerable emphasis on bean quality, skilled baristas, and independent roasters. Cafés often combine coffee with brunch and casual dining, making them an important part of neighborhood life.`
+            },
+            tokyo: {
+                title: 'Tokyo, Japan 🇯🇵',
+                image: 'assets/Tokyo.jpg',
+                description: `Tokyo has a fascinating coffee culture that combines traditional kissaten cafés with a highly developed specialty-coffee scene. Kissaten are traditional coffee shops known for their quiet atmosphere, carefully prepared drinks, and classic approach to café service.
+
+Japan is also known for its attention to brewing technique. Pour-over coffee, particularly hand-brewed styles such as those prepared with a V60, is widely appreciated among specialty-coffee enthusiasts. Tokyo's coffee culture reflects a broader appreciation for precision, craftsmanship, presentation, and the experience of enjoying a carefully prepared cup.`
+            },
+            veracruz: {
+                title: 'Veracruz, Mexico 🇲🇽',
+                image: 'assets/Veracruz.jpg',
+                description: `Veracruz has a particularly strong connection to Mexican coffee because the state is one of the country's important coffee-growing regions. The area's climate and mountainous landscapes provide suitable conditions for producing coffee beans.
+
+Coffee is part of everyday life in Veracruz, with traditional preparations existing alongside modern cafés. Café de olla is one of Mexico's best-known traditional coffee styles, typically brewed with ingredients such as cinnamon and piloncillo. The region's coffee culture therefore connects agricultural production, traditional recipes, and everyday social gatherings.`
+            },
+            vienna: {
+                title: 'Vienna, Austria 🇦🇹',
+                image: 'assets/Vienna.jpg',
+                description: `Vienna's coffeehouse culture is one of Europe's most distinctive café traditions. Historic coffeehouses developed into places where people could spend long periods reading newspapers, meeting friends, writing, or simply enjoying coffee.
+
+Rather than treating coffee as something to consume quickly, the traditional Viennese approach emphasizes the atmosphere and experience of the coffeehouse. Drinks such as Wiener Melange remain associated with this culture, while modern cafés and specialty roasters have introduced newer approaches to coffee alongside the city's historic traditions.`
+            },
+            wellington: {
+                title: 'Wellington, New Zealand 🇳🇿',
+                image: 'assets/Wellington.jpg',
+                description: `Wellington has a lively café culture supported by independent cafés, local roasters, and a strong appreciation for espresso-based drinks. Coffee shops are an important part of the city's social and creative atmosphere.
+
+New Zealand is closely associated with the flat white, a drink that has become internationally popular. Wellington's cafés also emphasize high-quality beans, skilled preparation, and relaxed environments. The city's relatively compact urban layout makes independent cafés easy to encounter, contributing to a strong neighborhood coffee culture.`
+            }
+        };
+
+        function showSlide(index) {
+            heroImages[currentImage].classList.remove('active');
+            dots[currentImage].classList.remove('active');
+
+            currentImage = index;
+
+            heroImages[currentImage].classList.add('active');
+            dots[currentImage].classList.add('active');
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(() => {
+                const nextIndex = (currentImage + 1) % heroImages.length;
+                showSlide(nextIndex);
+            }, 3000);
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+                clearInterval(slideInterval);
+                startSlideShow();
+            });
+        });
+
+        countryLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const country = countryDetails[link.dataset.country];
+                if (!country) {
+                    return;
+                }
+
+                clearInterval(slideInterval);
+                heroTitle.textContent = country.title;
+                heroDescription.textContent = country.description;
+                heroImages.forEach((image) => image.classList.remove('active'));
+                heroImages[0].src = country.image;
+                heroImages[0].alt = country.title;
+                heroImages[0].classList.add('active');
+                dots.forEach((dot, index) => dot.classList.toggle('active', index === 0));
+                currentImage = 0;
+                document.querySelector('.hero-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        if (heroImages.length > 1) {
+            startSlideShow();
+        }
+    </script>
+</body>
+</html>

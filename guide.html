@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beanfolk | Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">☕ Beanfolk</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="guide.html" class="active-link">Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-icon">Q</div>
+    </header>
+
+    <main class="guide-page-shell">
+        <div class="guide-header">
+            <h1>The Bean Guide</h1>
+            <p>Everything you need to know about brewing the perfect cup.</p>
+        </div>
+
+        <div class="guide-layout">
+            <aside class="sidebar">
+                <div class="sidebar-group open">
+                    <button class="menu-button" type="button">Categories</button>
+                </div>
+
+                <div class="menu-item open">
+                    <button class="menu-button" type="button">Coffee Beans</button>
+                    <div class="submenu">
+                        <a href="#">Arabica</a>
+                        <a href="#">Robusta</a>
+                        <a href="#">Liberica</a>
+                        <a href="#">Excelsa</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <button class="menu-button" type="button">Brewing Methods</button>
+                    <div class="submenu">
+                        <a href="#">Pour Over</a>
+                        <a href="#">French Press</a>
+                        <a href="#">Espresso</a>
+                        <a href="#">Aeropress</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <button class="menu-button" type="button">Equipment</button>
+                    <div class="submenu">
+                        <a href="#">Grinders</a>
+                        <a href="#">Kettles</a>
+                        <a href="#">Drippers</a>
+                        <a href="#">Scales</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <button class="menu-button" type="button">Tips</button>
+                    <div class="submenu">
+                        <a href="#">Storage</a>
+                        <a href="#">Roast Profiles</a>
+                        <a href="#">Water Quality</a>
+                        <a href="#">Grinding</a>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="guide-content">
+                <div class="guide-cards">
+                    <article class="guide-card" data-target="coffee-beans-panel">
+                        <img src="https://placehold.co/400x250/ECE4D9/3E2723?text=Coffee+Beans" alt="Coffee Beans">
+                        <h3>Coffee Beans</h3>
+                        <p>Learn how bean type affects flavor, body, and acidity so you can choose the perfect roast for your taste.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </article>
+
+                    <article class="guide-card" data-target="brewing-comparison-panel">
+                        <img src="https://placehold.co/400x250/ECE4D9/3E2723?text=Brewing+Methods" alt="Brewing Methods">
+                        <h3>Brewing Methods</h3>
+                        <p>Compare popular brewing styles to find which one gives the cleanest flavor, richest texture, or strongest crema.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </article>
+
+                    <article class="guide-card" data-target="equipment-panel">
+                        <img src="https://placehold.co/400x250/ECE4D9/3E2723?text=Equipment" alt="Equipment">
+                        <h3>Equipment</h3>
+                        <p>Discover the must-have tools for grinding, pouring, and brewing better coffee at home with more consistency.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </article>
+
+                    <article class="guide-card" data-target="tips-panel">
+                        <img src="https://placehold.co/400x250/ECE4D9/3E2723?text=Tips" alt="Tips">
+                        <h3>Tips</h3>
+                        <p>Use simple techniques like proper storage and fresh grinding to improve taste and quality every single brew.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </article>
+                </div>
+
+                <div class="detail-panels">
+                    <section class="detail-panel" id="coffee-beans-panel">
+                        <h2>Coffee Beans</h2>
+                        <p>Each bean has its own character, acidity, and body. Choosing the right coffee bean changes the flavor dramatically.</p>
+
+                        <div class="bean-summary-grid">
+                            <article class="bean-summary">
+                                <h3>Arabica</h3>
+                                <p><strong>Flavor:</strong> Smooth, sweet, and balanced with hints of fruit, caramel, or sugar.</p>
+                                <p><strong>Best for:</strong> People who enjoy a clean, mellow, and aromatic cup.</p>
+                            </article>
+
+                            <article class="bean-summary">
+                                <h3>Robusta</h3>
+                                <p><strong>Flavor:</strong> Strong, earthy, and a little bitter with a heavier body.</p>
+                                <p><strong>Best for:</strong> Espresso lovers and anyone who likes a bold, high-caffeine cup.</p>
+                            </article>
+
+                            <article class="bean-summary">
+                                <h3>Liberica</h3>
+                                <p><strong>Flavor:</strong> Floral, woody, and slightly fruity with a unique, exotic profile.</p>
+                                <p><strong>Best for:</strong> Drinkers who want a rare and adventurous coffee experience.</p>
+                            </article>
+
+                            <article class="bean-summary">
+                                <h3>Excelsa</h3>
+                                <p><strong>Flavor:</strong> Tart, complex, and layered with bright fruity notes.</p>
+                                <p><strong>Best for:</strong> Blends that need more depth, brightness, and character.</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="detail-panel active" id="brewing-comparison-panel">
+                        <h2>Brewing Comparison</h2>
+                        <p>Different brewing methods change the taste by affecting extraction, body, and clarity. The method you choose depends on the flavor you want.</p>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Method</th>
+                                        <th>Typical Brew Time</th>
+                                        <th>Difficulty</th>
+                                        <th>Flavor &amp; Texture</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>French Press</td>
+                                        <td>4 - 5 mins</td>
+                                        <td>Beginner</td>
+                                        <td>Full-bodied, rich, and slightly heavier with more oils and sediment.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pour Over (V60)</td>
+                                        <td>3 - 4 mins</td>
+                                        <td>Intermediate</td>
+                                        <td>Clean, crisp, and aromatic with bright flavors and a lighter body.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espresso</td>
+                                        <td>25 - 30 secs</td>
+                                        <td>Advanced</td>
+                                        <td>Strong, concentrated, and creamy with a bold finish and dense crema.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aeropress</td>
+                                        <td>2 - 3 mins</td>
+                                        <td>Beginner</td>
+                                        <td>Balanced and smooth, with a mellow body that is easy to customize.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="detail-panel" id="equipment-panel">
+                        <h2>Equipment</h2>
+                        <p>The right tools make brewing more consistent, more enjoyable, and easier to repeat at home.</p>
+                        <div class="equipment-grid">
+                            <article class="equipment-box">
+                                <h3>Burr grinder</h3>
+                                <p>Gives a uniform grind size, which helps extraction stay balanced and prevents muddy or uneven flavor.</p>
+                            </article>
+                            <article class="equipment-box">
+                                <h3>Pour-over dripper</h3>
+                                <p>Directs water through the grounds evenly, creating a clean cup with clarity and brightness.</p>
+                            </article>
+                            <article class="equipment-box">
+                                <h3>Gooseneck kettle</h3>
+                                <p>Lets you control the flow of water precisely, which is especially useful for slow, even pouring.</p>
+                            </article>
+                            <article class="equipment-box">
+                                <h3>Scale</h3>
+                                <p>Helps measure exact coffee and water amounts so your brews can be consistent from day to day.</p>
+                            </article>
+                            <article class="equipment-box">
+                                <h3>Paper filters</h3>
+                                <p>Trap fine particles and oils, helping produce a lighter, cleaner cup with less sediment.</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="detail-panel" id="tips-panel">
+                        <h2>Tips</h2>
+                        <p>Small details can make a big difference in coffee flavor, consistency, and overall experience.</p>
+                        <div class="tips-grid">
+                            <div class="tip-box">
+                                <h3>Store beans correctly</h3>
+                                <p>Keep coffee in an airtight container away from sunlight, heat, and moisture so it stays fresh longer.</p>
+                            </div>
+                            <div class="tip-box">
+                                <h3>Grind right before brewing</h3>
+                                <p>Freshly ground beans release more aroma and taste better than pre-ground coffee that has already lost its oils.</p>
+                            </div>
+                            <div class="tip-box">
+                                <h3>Use filtered water</h3>
+                                <p>Water quality strongly affects extraction. Clean, balanced water helps coax out the best flavors.</p>
+                            </div>
+                            <div class="tip-box">
+                                <h3>Dial in your ratio</h3>
+                                <p>Try different coffee-to-water ratios until the balance feels smooth, sweet, and not too weak or too bitter.</p>
+                            </div>
+                            <div class="tip-box">
+                                <h3>Watch your brew time</h3>
+                                <p>Over-extraction can taste harsh, while under-extraction can feel sour. Adjust your time carefully.</p>
+                            </div>
+                            <div class="tip-box">
+                                <h3>Clean your gear</h3>
+                                <p>Residue from old coffee can affect flavor. Clean grinders, filters, and drippers regularly for a cleaner cup.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">☕</div>
+        <div class="footer-socials">
+            <span>Socials 1</span>
+            <span>Socials 2</span>
+            <span>Socials 3</span>
+            <span>Socials 4</span>
+        </div>
+        <button class="btn sign-up-btn">Sign up</button>
+    </footer>
+
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+        const guideCards = document.querySelectorAll('.guide-card');
+        const detailPanels = document.querySelectorAll('.detail-panel');
+
+        menuItems.forEach((item) => {
+            const button = item.querySelector('.menu-button');
+
+            button.addEventListener('click', () => {
+                menuItems.forEach((otherItem) => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('open');
+                    }
+                });
+
+                item.classList.toggle('open');
+            });
+        });
+
+        guideCards.forEach((card) => {
+            const readMore = card.querySelector('.read-more');
+            const targetId = card.dataset.target;
+
+            readMore.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                detailPanels.forEach((panel) => {
+                    panel.classList.toggle('active', panel.id === targetId);
+                });
+
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
