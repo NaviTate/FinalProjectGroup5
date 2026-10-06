@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beanfolk | Guide</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/Icon.png">
+    <link rel="stylesheet" href="style.css?v=20261006-logo-blend">
 </head>
 <body>
     <header>
-        <div class="logo">☕ Beanfolk</div>
+        <div class="logo"><img src="assets/Icon.png" alt="Beanfolk coffee logo"></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="guide.html" class="active-link">Guide</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -34,40 +35,40 @@
                 <div class="menu-item open">
                     <button class="menu-button" type="button">Coffee Beans</button>
                     <div class="submenu">
-                        <a href="#">Arabica</a>
-                        <a href="#">Robusta</a>
-                        <a href="#">Liberica</a>
-                        <a href="#">Excelsa</a>
+                        <a href="#" class="submenu-link active" data-panel="coffee-beans-panel">Arabica</a>
+                        <a href="#" class="submenu-link" data-panel="coffee-beans-panel">Robusta</a>
+                        <a href="#" class="submenu-link" data-panel="coffee-beans-panel">Liberica</a>
+                        <a href="#" class="submenu-link" data-panel="coffee-beans-panel">Excelsa</a>
                     </div>
                 </div>
 
                 <div class="menu-item">
                     <button class="menu-button" type="button">Brewing Methods</button>
                     <div class="submenu">
-                        <a href="#">Pour Over</a>
-                        <a href="#">French Press</a>
-                        <a href="#">Espresso</a>
-                        <a href="#">Aeropress</a>
+                        <a href="#" class="submenu-link" data-panel="brewing-comparison-panel">Pour Over</a>
+                        <a href="#" class="submenu-link" data-panel="brewing-comparison-panel">French Press</a>
+                        <a href="#" class="submenu-link" data-panel="brewing-comparison-panel">Espresso</a>
+                        <a href="#" class="submenu-link" data-panel="brewing-comparison-panel">Aeropress</a>
                     </div>
                 </div>
 
                 <div class="menu-item">
                     <button class="menu-button" type="button">Equipment</button>
                     <div class="submenu">
-                        <a href="#">Grinders</a>
-                        <a href="#">Kettles</a>
-                        <a href="#">Drippers</a>
-                        <a href="#">Scales</a>
+                        <a href="#" class="submenu-link" data-panel="equipment-panel">Grinders</a>
+                        <a href="#" class="submenu-link" data-panel="equipment-panel">Kettles</a>
+                        <a href="#" class="submenu-link" data-panel="equipment-panel">Drippers</a>
+                        <a href="#" class="submenu-link" data-panel="equipment-panel">Scales</a>
                     </div>
                 </div>
 
                 <div class="menu-item">
                     <button class="menu-button" type="button">Tips</button>
                     <div class="submenu">
-                        <a href="#">Storage</a>
-                        <a href="#">Roast Profiles</a>
-                        <a href="#">Water Quality</a>
-                        <a href="#">Grinding</a>
+                        <a href="#" class="submenu-link" data-panel="tips-panel">Storage</a>
+                        <a href="#" class="submenu-link" data-panel="tips-panel">Roast Profiles</a>
+                        <a href="#" class="submenu-link" data-panel="tips-panel">Water Quality</a>
+                        <a href="#" class="submenu-link" data-panel="tips-panel">Grinding</a>
                     </div>
                 </div>
             </aside>
@@ -243,10 +244,9 @@
     <footer>
         <div class="footer-logo">☕</div>
         <div class="footer-socials">
-            <span>Socials 1</span>
-            <span>Socials 2</span>
-            <span>Socials 3</span>
-            <span>Socials 4</span>
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>X</span>
         </div>
         <button class="btn sign-up-btn">Sign up</button>
     </footer>
@@ -255,6 +255,48 @@
         const menuItems = document.querySelectorAll('.menu-item');
         const guideCards = document.querySelectorAll('.guide-card');
         const detailPanels = document.querySelectorAll('.detail-panel');
+        const submenuLinks = document.querySelectorAll('.submenu-link');
+        const guideLayout = document.querySelector('.guide-layout');
+        const guideContent = document.querySelector('.guide-content');
+        const sidebar = document.querySelector('.sidebar');
+
+        function applyGuideResponsiveLayout() {
+            const isMobile = window.innerWidth <= 768;
+
+            if (guideLayout) {
+                guideLayout.style.display = isMobile ? 'block' : '';
+                guideLayout.style.gridTemplateColumns = isMobile ? '1fr' : '220px 1fr';
+            }
+
+            if (guideContent) {
+                guideContent.style.display = isMobile ? 'block' : '';
+                guideContent.style.width = isMobile ? '100%' : '';
+                guideContent.style.minWidth = isMobile ? '0' : '';
+                guideContent.style.maxWidth = isMobile ? '100%' : '';
+            }
+
+            if (sidebar) {
+                sidebar.style.display = isMobile ? 'block' : '';
+                sidebar.style.width = isMobile ? '100%' : '';
+                sidebar.style.minWidth = isMobile ? '0' : '';
+                sidebar.style.maxWidth = isMobile ? '100%' : '';
+            }
+
+            guideCards.forEach((card) => {
+                card.style.display = isMobile ? 'block' : '';
+                card.style.width = isMobile ? '100%' : '';
+                card.style.maxWidth = isMobile ? '100%' : '';
+                card.style.minWidth = isMobile ? '0' : '';
+            });
+
+            const guideCardsContainer = document.querySelector('.guide-cards');
+            if (guideCardsContainer) {
+                guideCardsContainer.style.display = isMobile ? 'block' : '';
+                guideCardsContainer.style.gridTemplateColumns = isMobile ? '1fr' : 'repeat(2, minmax(220px, 1fr))';
+                guideCardsContainer.style.minWidth = isMobile ? '0' : '';
+                guideCardsContainer.style.maxWidth = isMobile ? '100%' : '';
+            }
+        }
 
         menuItems.forEach((item) => {
             const button = item.querySelector('.menu-button');
@@ -284,6 +326,27 @@
                 document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
+
+        submenuLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+
+                const targetId = link.dataset.panel;
+
+                detailPanels.forEach((panel) => {
+                    panel.classList.toggle('active', panel.id === targetId);
+                });
+
+                submenuLinks.forEach((item) => {
+                    item.classList.toggle('active', item === link);
+                });
+
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        applyGuideResponsiveLayout();
+        window.addEventListener('resize', applyGuideResponsiveLayout);
     </script>
 </body>
 </html>

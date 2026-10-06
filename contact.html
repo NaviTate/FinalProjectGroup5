@@ -1,173 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beanfolk | Contact</title>
- 
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beanfolk | Contact</title>
+    <link rel="icon" type="image/png" href="assets/Icon.png">
+    <link rel="stylesheet" href="style.css?v=20261006-logo-blend">
 </head>
- 
 <body>
- 
-  <header>
-<div class="logo">☕ Beanfolk</div>
- 
-    <nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="guide.html">Guide</a></li>
-<li><a href="contact.html" class="active-link">Contact</a></li>
-</ul>
-</nav>
- 
-</header>
- 
- 
-  <main class="contact-page">
- 
-    <div class="contact-layout">
- 
-      <section class="contact-form-panel">
- 
-        <h1>Get in Touch</h1>
- 
-        <p>
+    <header>
+        <div class="logo"><img src="assets/Icon.png" alt="Beanfolk coffee logo"></div>
 
-          Have a question about coffee culture, brewing methods, or Beanfolk?
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="contact.html" class="active-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-          We'd love to hear from you.
-</p>
- 
-        <h2>Send us a message</h2>
- 
-        <form class="contact-form">
- 
-          <input
+    <main class="contact-page">
+        <div class="contact-layout">
+            <section class="contact-form-panel">
+                <h1>Get in Touch</h1>
+                <p>Have a question about coffee culture, brewing methods, or Beanfolk? We'd love to hear from you.</p>
 
-            type="text"
+                <h2>Send us a message</h2>
 
-            class="form-control"
+                <form class="contact-form">
+                    <input type="text" class="form-control" placeholder="Your name" required>
+                    <input type="email" class="form-control" placeholder="Your email" required>
 
-            placeholder="Your name"
+                    <select class="form-select" required>
+                        <option value="" disabled selected>Choose a topic</option>
+                        <option value="coffee-culture">Coffee Culture</option>
+                        <option value="brewing">Brewing Methods</option>
+                        <option value="coffee-guide">Coffee Guide</option>
+                        <option value="feedback">Website Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
 
-            required
->
- 
-          <input
+                    <textarea class="form-control" rows="7" placeholder="Write your message here..." required></textarea>
 
-            type="email"
+                    <label>
+                        <input type="checkbox">
+                        Sign me up for the Beanfolk newsletter
+                    </label>
 
-            class="form-control"
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
 
-            placeholder="Your email"
+            <aside class="contact-gallery">
+                <img
+                    class="gallery-main"
+                    src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80"
+                    alt="Coffee shop interior"
+                >
 
-            required
->
- 
-          <select class="form-select" required>
-<option value="" disabled selected>Choose a topic</option>
-<option value="coffee-culture">Coffee Culture</option>
-<option value="brewing">Brewing Methods</option>
-<option value="coffee-guide">Coffee Guide</option>
-<option value="feedback">Website Feedback</option>
-<option value="other">Other</option>
-</select>
- 
-          <textarea
+                <div class="gallery-grid">
+                    <div class="gallery-column">
+                        <img
+                            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+                            alt="Coffee and latte"
+                        >
+                        <img
+                            src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80"
+                            alt="Latte surrounded by coffee beans"
+                        >
+                    </div>
 
-            class="form-control"
-
-            rows="7"
-
-            placeholder="Write your message here..."
-
-            required
-></textarea>
- 
-          <label>
-<input type="checkbox">
-
-            Sign me up for the Beanfolk newsletter
-</label>
- 
-          <button type="submit" class="btn">Send Message</button>
- 
-        </form>
- 
-      </section>
- 
- 
-      <aside class="contact-gallery">
- 
-        <img
-
-          class="gallery-main"
-
-          src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80"
-
-          alt="Coffee shop interior"
->
- 
-        <div class="gallery-grid">
- 
-          <div class="gallery-column">
- 
-            <img
-
-              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
-
-              alt="Coffee and latte"
->
- 
-            <img
-
-              src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=800&q=80"
-
-              alt="Latte surrounded by coffee beans"
->
- 
-          </div>
- 
-          <div class="gallery-column tall">
- 
-            <img
-
-              src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80"
-
-              alt="Barista preparing coffee"
->
- 
-          </div>
- 
+                    <div class="gallery-column tall">
+                        <img
+                            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80"
+                            alt="Barista preparing coffee"
+                        >
+                    </div>
+                </div>
+            </aside>
         </div>
- 
-      </aside>
- 
-    </div>
- 
-  </main>
- 
- 
-  <footer>
- 
-    <div class="footer-logo">☕ Beanfolk</div>
- 
-    <div class="footer-socials">
-<span>Socials</span>
-<span>1</span>
-<span>2</span>
-<span>3</span>
-<span>4</span>
-</div>
- 
-    <button class="btn">Sign up</button>
- 
-  </footer>
- 
- 
+    </main>
+
+    <footer>
+        <div class="footer-logo">☕ Beanfolk</div>
+
+        <div class="footer-socials">
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>X</span>
+        </div>
+
+        <button class="btn">Sign up</button>
+    </footer>
 </body>
 </html>
- 
+
